@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="stylesheet"href="style.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.o" />
+        <title>Skyn'd by Angelo</title>
+        <link href="https:fonts.googleapis.com/css2?family=playfair+Display:wght@50;70&family=open+sans&display=swap" rel="stylesheet">
+        
+    </head>
+    <style>
+        body {
+            margin: 0;
+             font-family: 'open sans', sans-serif;
+            color: goldenrod;
+             background-color: #fffaf7; 
+          }
+         
+header {
+          background-color: #e3c5bb;
+            padding:2rem;
+           text-align: center; 
+        }
+        
+     
+header h1 {
+    font-family: 'playfair Display', serif;
+    font-size: 3rem;
+    margin:0;
+}
+
+
+header p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+.logo {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0,2);
+    margin-bottom: 1rem;
+}
+
+
+nav {
+    background-color: #d6b0a4;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section image{
+    max-width:10%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1 rem;
+}
+
+
+.cta {
+    background-color: #f5e4df;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.cta button {
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #e3c5bb;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+    </style>
+    <body>
+        
+        <header>
+            <h1>Skyn'd by Angelo</h1>
+            <p>Where confidence meets skin care</p>
+            <a href="https://www.instagram.com/skyndbyangelo_?"> click here for instagram
+        </header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="about">
+            <h2>About Angelo</h2>
+            <p>Angelo is a licenced esthetician specializing in result-driven skincare treatments designed to rejuvenate and empower.with passion for healthy skin and commitment to excellence,Angelo offers a unique, personalized experience for every client</p>
+            <img src="images/473666649_484370744325353_7185364828380197428_n.jpg" alt="Angelo portrait" width="800" height="400" loading="lazy">
+        </section>
+        
+        <section id="services">
+            <h2>services</h2>
+            <ul>
+                <li>Acne Treaments</li>
+                <li>Custom Facials</li>
+                <li>Eye-serum</li>
+                <li>Moisturizer</li>
+                <li>Hydrating Masks</li>
+            </ul>
+            <img src="images/503058854_17867522643390396_7399163412511307843_n.webp" alt="skincare treatment image" width="800" height="400" loading="lazy">
+        </section>
+
+        <section class="cta" id="booking">
+            <h2>Ready to Get Skyn'd?</h2>
+            <p>Book your personalized skincare experience today.</p>
+            <button>Book Now</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: Angelometh04@gmail.com</p>
+            <p>Instagram:Skyn'dbyangelo</p>
+            <p>Contact: 0677977572</p>
+            <p>Location: Durban / Johannesburgh</p>
+            <img src="images/474618013_17849549889390396_6470637684195000391_n.jpg" alt="studio interior image" width="800" height="400" loading="lazy">
+        </section>
+
+        <script>
+            const colors=[
+                "#f8bbd0",
+                "#d1c4e9",
+                "#b2dfdb",
+                "#ffe082",
+                "#ffab91",
+                "#e1bee7",
+            ];
+            let i = 0;
+
+            setInterval(() => {
+                document.body.style.background =colors[i];
+                i =(i + 1) % colors.length;
+            }, 2500);
+        </script>
+
+        <footer>
+            <p>&copy; 2025 Get Skyn'd by Angelo.ALL rights reserved.</p>
+        </footer>
+    </body>
+</html>
